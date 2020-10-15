@@ -1,8 +1,8 @@
 # SEI-project-3: GigMe
 ## Overview
 
-GigMe is a community site, finding the best local gigs in near you. The API has been built with gigs, but also allows you to add some gigs in yourself when you have logged into the app. The brief was to create a full stack application.
-This was my thirs project in General Assembly's Software Engineering Immersive course. It was a group project assigned after 8 weeks of coding, and 1 week of learning MongoDB/Express.
+GigMe is a community site, finding the best local gigs near you. The API has been built with gigs, but also allows you to add some gigs in yourself when you have logged into the app. The brief was to create a Full-Stack application.
+This was my third project in General Assembly's Software Engineering Immersive course. It was a group project assigned after 8 weeks of coding, and 1 week of learning MongoDB/Express.
 <br></br>
 
 ## My App
@@ -12,7 +12,7 @@ You can find the hosted version of the app here: https://gigme-sei.herokuapp.com
 
 ## Timeframe and Technologies
 
-8 days to complete, groupd of 4
+8 days to complete, groups of 4
 
 Technologies:
 - ReactJS
@@ -27,26 +27,26 @@ Technologies:
 
 ## Website Details
 
-1. On loading the Site you are met with our home page, which hosts our hero image, featured artists, maps  and a calendar. This can be viewed by any user, not specific to login or sign up.
+1. On loading the Site, you are met with our home page, which hosts our hero image, featured artists, maps  and a calendar. This can be viewed by any user, not specific to login or sign up.
 <br></br>
 
 ![Home Page](screenshots-for-gigme/home-page.png) ![Home Page](screenshots-for-gigme/homepage-2.png) ![Home Page](screenshots-for-gigme/homepage-3.png)
 <br></br>
 
-2. You can navigate around the site without being logged in, however your view will be limited. You can still see all the artists when you click on the all artists button. This will take you to the index page which displays all gigs in our API. Here you can filter through the different categories e.g. Classical gigs, rock gigs etc.
+2. You can navigate around the site without being logged in, however, your view will be limited. You can still see all the artists when you click on the all artists button. This will take you to the index page which displays all gigs in our API. Here, you can filter through the different categories e.g. Classical gigs, rock gigs etc.
 <br></br>
 
 ![Index Page](screenshots-for-gigme/index-all.png) ![Index Page](screenshots-for-gigme/index-pop.png)
 <br></br>
 
-3. When you click through on one of the gigs it will take you through to the individual page of the gig which will give you the details of it. The view and functionality will differ depending on whether you are logged in or not. If you wish to like/comment on the gig you will have to register and log it.
+3. When you click through on one of the gigs, it will take you through to the individual page of the gig, where more details will be available. The view and functionality will differ depending on whether you are logged in or not. If you wish to like/comment on the gig, you will have to register and log it.
 <br></br>
 
 ![Register](screenshots-for-gigme/register.png) ![Login](screenshots-for-gigme/login.png)
 ![Show Page](screenshots-for-gigme/show-when-logged-out.png) ![Show Page when logged in](screenshots-for-gigme/show-when-logged-in.png)
 <br></br>
 
-4. When logged in, it also exposes additional functionality of the site, e.g. the ability to add gigs and edit them too.  You can also see what other members activity when you click through to their profile.
+4. When logged in, it also provides additional functionality of the site, e.g. the ability to add gigs and edit them too.  You can also see what other members activity when you click through to their profile.
 <br></br>
 
 ![Create Gig](screenshots-for-gigme/create-my-gig.png) ![Edit Gig](screenshots-for-gigme/edit-my-gig.png)
@@ -61,7 +61,7 @@ Technologies:
 
 ## Process
 
-We began the project by drawing up some wireframes of what we wanted our site to look like and so that we could map out the end goal and work back. This helped us also identify what we wanted our backend to look like and what sort of relationships we weanted. We also used trello to track our progress and work as a project management tool.
+We began the project by drawing up some wireframes of what we wanted our site to look like and so that we could map out the end goal and work back. This helped us also identify what we wanted our backend to look like and what sort of relationships we weanted. We also used trello to track our progress to work as a project management tool.
 <br></br>
 
 ![Home Wireframe](screenshots-for-gigme/homepage-calendar.png) ![Login Wireframe](screenshots-for-gigme/login-wireframe.png)
@@ -83,6 +83,9 @@ Throughout the week we set up our day with stand-up, splitting up and dividing t
 
 A big challenge was learning to work as a group and aligning on concept, as well as workload initially. Some tasks were more complicated and it was hard as everyone wanted to be involved in all aspects of the project which is difficult.
 <br></br>
+
+## Key Learnings
+This was my first time working in a 'larger group'. It was extremely difficult at the start to establish roles e.g. who was PM, who would lead on delivering front-end, styling, functionality, Back-End etc. This took us a long time to establish. We have now learnt that establishing roles and sticking to them is key at the beginning. Another thing is making decisions and prioritising work. You often spend a lot of time making decisions, which is important, but sometimes a decision has to be made quickly to actually leave time to get the work done!
 
 ## Future features
 
