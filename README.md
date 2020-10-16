@@ -67,7 +67,25 @@ We began the project by drawing up some wireframes of what we wanted our site to
 ![Home Wireframe](screenshots-for-gigme/homepage-calendar.png) ![Login Wireframe](screenshots-for-gigme/login-wireframe.png)
 <br></br>
 
-We then split off and 2 of us focused on creating our data requests on the backend, testing them as we went through insomnia and making sure the right relationships were there. The other half of the group made initial components for our frontend. Once the backend was in a place we were happy with, we decided to focus on mounting the data on the front end and making requests. We split the workload relatively similarly and focused on creating user interaction first and going from there. Once all our data was successfully mounted we worked towards post-mvp ideas and styling. This was also split relatively evenly, with more complex tasks sometimes pair-coded to get more eyes on the task!
+We then split off and 2 of us focused on creating our data requests on the backend, testing them as we went through insomnia and making sure the right relationships were there. The other half of the group made initial components for our frontend. Once the backend was in a place we were happy with, we decided to focus on mounting the data on the front end and making requests.
+
+``` javascript
+async function eventsLike (req, res, next) {
+  try {
+    const event = await Event.findById(req.params.id) // find the event by the id in the URL
+    if (!event) throw new Error(notFound) // if you cannot find the event then throw the 'not found' error
+    const likeBody = req.body // assign like body to the body of the request
+    likeBody.user = req.currentUser._id // assign the user as the current user logged in
+    event.likes.push(likeBody) // push the like body onto the event
+    await event.save() // save the event
+    res.status(201).json(event) // return the event
+  } catch (err) {
+    next(err) // if this doesn't work then through the next error
+  }
+}
+```
+
+We split the workload relatively similarly and focused on creating user interaction first and going from there. Once all our data was successfully mounted we worked towards post-mvp ideas and styling. This was also split relatively evenly, with more complex tasks sometimes pair-coded to get more eyes on the task!
 
 Throughout the week we set up our day with stand-up, splitting up and dividing tasks and ensuring we were on the same page. We would communicate throughout the day (using slack and zoom, as we were working remotely), sending updates and jumping in to help others where possible. Communication meant we could reach our MVP on time and spend time styling, error handling and ensuring the best ux we could possible.
 <br></br>
